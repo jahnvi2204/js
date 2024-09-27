@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1e1e2d; /* Darker background for a more modern look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  width: 400px; /* Slightly wider for better readability */
+  border-radius: 15px; /* More rounded corners for a smoother look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Elevated shadow for depth */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quiz-container:hover {
+  transform: scale(1.02); /* Slight hover effect for interactivity */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  background: linear-gradient(135deg, #5a85de, #1e2c76); /* Gradient for a modern touch */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px; /* Larger font size for better emphasis */
+  font-weight: 700;
+}
+
+.quiz-box {
+  padding: 25px; /* More padding for comfortable spacing */
+  font-size: 16px;
+  color: #333;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 20px; /* Increase question size for prominence */
+  font-weight: 700;
+  color: #333;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Gap between buttons for clearer spacing */
+}
+
+.option-btn {
+  padding: 12px;
+  border: 2px solid transparent;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transitions for interactivity */
+  text-align: center;
+}
+
+.option-btn:hover {
+  background-color: #5a85de;
+  color: white;
+  border: 2px solid #5a85de;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add depth on hover */
+}
+
+.option-btn:active {
+  transform: scale(0.98); /* Slight press-down effect when clicked */
+}
+
+footer {
+  padding: 15px 25px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0; /* Soft border to separate footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#next-btn {
+  padding: 12px 20px;
+  background-color: #1e2c76;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #5a85de;
+}
+
+#next-btn:active {
+  transform: scale(0.97); /* Slight click animation */
+}
+
+#score {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
